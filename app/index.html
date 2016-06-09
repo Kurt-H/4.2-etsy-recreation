@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 2 etsy recreation</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+      <div class="header">
+        <div class="row">
+          <div class="col-md-12">
+            logo, search box, sell by Etsy, Register, sign in, cart
+          </div>
+        </div>
+        <div class="col-md-12">
+          pull-down menus
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2">
+          <h5>left side content</h5>
+          <div>
+            <ul>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+            </ul>
+          </div>
+          <h5></h5>
+          <div>
+          </div>
+        </div>  <!--class="col-md-2"-->
+        <div class="col-md-10 images">
+
+            <div class="top-categories">
+              <div class="col-md-4">
+                <img />
+                <div>
+                  <div>
+                    <h3>Craft Supplies &amp; Tools</h3>
+                    <div>154,089 Items</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img />
+                <div>
+                  <div>
+                    <h3>Accessories</h3>
+                    <div>47,873 Items</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img />
+                <div>
+                  <div>
+                    <h3>Home &amp; Living</h3>
+                    <div>24,020 Items</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img />
+                <div>
+                  <div>
+                    <h3>Clothing</h3>
+                    <div>11,778 Items</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img />
+                <div>
+                  <div>
+                    <h3>Jewelry</h3>
+                    <div>9,965 Items</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img />
+                <div>
+                  <div>
+                    <h3>Toys &amp; Games</h3>
+                    <div>7,160 Items</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img />
+                <div>
+                  <div>
+                    <h3>Art & Collectables</h3>
+                    <div>6,753 Items</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="all-categories-container">
+
+              <div class="row tiles" >
+
+                <div class="col-md-3">
+                  <div id="tile">
+                    <div>
+                      <img /> <!-- use image as background -->
+                    </div>
+                    <div>
+                      <a>Title</a>
+                      <a>Shop Name</a>
+                      <span>Price</span>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div><!--class="row tile"-->
+
+            </div> <!-- all-categories-container-->
+          </div> <!--col-md-12 (within 10 col)-->
+
+      </div><!--class=row (for side content)-->
+    </div><!--class="container-fluid"-->
+
+
+
+    <script id="tiles" type="text/x-handlebars-template">
+
+      {{#each tilesList}}
+        <div class="col-md-3">
+          <div class="tile">
+            <div>
+              <img src=""/>
+            </div>
+            <div>
+              <a>{{title}}</a> <!--{{***}}has to match Etsy field names-->
+              <a>{{shop_name}}</a>
+              <span>{{price}}</span>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </script/>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
